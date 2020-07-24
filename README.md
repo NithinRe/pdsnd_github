@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+
+13 june, 2020
 
 ### Project Title
-Replace the Project Title
+
+Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+
+The project is about displaying a city dataset from January to July each or all months with any weekday (or all). The user can select: a. city b. month or all months (between Jan to July) c. day (one weekday or all)
 
 ### Files used
-Include the files used
+
+chicago.csv, washington.csv, new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+1. http://queirozf.com/entries/pandas-dataframe-examples-column-operations
+2. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
