@@ -4,7 +4,7 @@
 
 ### Project Title
 
-Bikeshare
+Bikeshare [chicago, washington, new york city]
 
 ### Description
 
@@ -18,3 +18,5 @@ chicago.csv, washington.csv, new_york_city.csv
 
 1. http://queirozf.com/entries/pandas-dataframe-examples-column-operations
 2. https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
+3. https://www.w3resource.com/pandas/series/series-loc.php
+4. https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
