@@ -4,7 +4,6 @@ import numpy as np
 import datetime as dt
 
 
-#fiiles for data exploration
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -26,10 +25,7 @@ def get_filters():
     months = ["January", "February", "March", "April", "May", "June", "All"]
     days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "All"]
  
-
-   
-    # TO DO: get user input for city (chicago, new york city, washington). 
-    # HINT: Use a while loop to handle invalid inputs
+     # HINT: Use a while loop to handle invalid inputs
 
     while True:
         city = input("Would you like to see data for chicago, new york, or washington?")
@@ -38,7 +34,6 @@ def get_filters():
             break
         else:
             print("Sorry! Please select from chicago, new york, or washington.")
-   # TO DO: get user input for month (all, january, february, ... , june)
     
     while True:
         month = input("Which month - january, february, march, april, may, june or all?")
@@ -47,7 +42,6 @@ def get_filters():
             break
         else:
             print("Sorry!Please select from all or one month from january, february, march, april, may, june.")
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("Which day - monday, tuesday, wednesday, thursday, friday, saturday, sunday or all?")
         if day.title() in days_of_week: 
@@ -108,15 +102,12 @@ def time_stats(df):
     
     start_time = time.time()
        
-    # TO DO: display the most common month
     most_common_month = df['months'].mode()[0]
     print("The most common month is", most_common_month)
         
-    # TO DO: display the most common day of week
     most_common_week = df['days_of_week'].mode()[0]
     print("The most common week is", most_common_week)
 
-    # TO DO: display the most common start hour
     most_common_hour = df['Hour'].mode()[0]
     print("The most common hour is", most_common_hour)
     
@@ -206,11 +197,9 @@ def user_stats(df):
         earliest_year = df['Birth Year'].min()
         print("The earliest_year of birth is", int(earliest_year))
 
-    # TO DO: Display most recent year of birth
         most_recent_year = df['Birth Year'].max()
         print("The most_year of birth is", int(most_recent_year))   
     
-    # TO DO: Display most common year of birth
         most_common_year = df['Birth Year'].mode()
         print("The most_common_year of birth is", int(most_common_year))
     else:
